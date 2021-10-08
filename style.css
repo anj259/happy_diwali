@@ -1,274 +1,20 @@
-/* css reset */
-/* @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300&display=swap'); */
-/* @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap'); */
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-
-*{
-    margin : 0;
-    padding :0;
-
+body{
+background : black; 
+margin: 0;
+padding: 0;
+overflow: hidden;
 }
 
-h3{
-    background-color: black;
-    color : white;
-    align-items: center;
-    justify-content: center;
-}
-html{
-    scroll-behavior : smooth;
+canvas{
+position : fixed;
+top : 0;
+left : 0;
+width : 100%;
+height : 100%;
+z-index : -1;
 }
 
 
-/* css variables */
-:root{
-    --navbar-height : 59px;
-}
-
-/* Navigation bar */
-#navbar{
-    display : flex;
-    align-items : center;
-    position : absolute;
-    position : sticky;  
-    top : 0px;
-}
-#navbar::before{
-    content: "";
-    background-color : black;
-    position : absolute;
-    top: 0px;
-    left : 0px;
-    height : 100%;
-    width : 100%;
-    z-index : -1;
-    opacity: 0.4;
-    }
-
-/* navigation bar :logo and image */
-#logo{
-    margin : 10px 20px;
-
-}
-
-#logo img{
-    height : 55px;
-    margin : -8px 16px;
-}
-
-/* navigation bar: list styling */
-
- #navbar ul{
-    /* font-family: 'Lobster', cursive; */
-    font-family: 'Bebas Neue', cursive;
-
-
-    display : flex;
-
-}
-
-#navbar ul li{
-    list-style: none;
-    font-size: 1.3rem;
-}
-
-#navbar ul li a{
-    color : white;
-    display : block;
-    padding : 3px 20px;
-    border-radius: 20px;
-    text-decoration: none;
-}
-#navbar ul li a:hover{
-    color : rgb(211, 233, 15);
-    background-color: rgb(202, 73, 14);
-}
-/* Home section  */
-
-#home{
-    display : flex;
-    flex-direction: column;
-    height : 518px;
-    padding : 3px 200px ;
-    justify-content: center;
-    align-items : center;
-}
-
-#home::before{
-    content : "";
-    background :url('images/food.jpg') no-repeat center center/cover;
-    position : absolute;
-    height : 71%;
-    width : 100%;
-    top: 0px;
-    left : 0px;
-    z-index : -1;
-    opacity: 0.89;
-}
-
-#home h1{
-    /* font-family: 'Lobster', cursive; */
-    font-family: 'Lobster', cursive;
-    font-family: 'Anton', sans-serif;
-    color : rgb(224, 96, 10);
-    text-align : center;
-}
-#home p{
-    color : white;
-    text-align : center;
-    font-size : 1.5rem;
-}
-
-/* services section  */
-#services{
-margin : 34px;
-display : flex;
-}
-
-#services .box{
-    border : 2px solid red;
-    padding : 25px;
-    margin :15px;
-    margin-top :-41px;
-    margin-bottom: 5px;
-    border-radius: 28px;
-    background :rgb(230 221 217);
-}
-
-#services .box img{
-    margin :auto;
-    display : block;
-    height : 80px;
-}
-
-#services .box p{
-    font-family: 'Bitter', serif;
-}
-/* client section  */
-
-#client-section{
-    position: relative;
-}
-
-#client-section::before{
- content: "";
- position : absolute;
- background: url('images/pizza1.jpg');
- width : 100%;
- height : 100%;
- z-index: -1;
- opacity: 0.3;
-}
-#clients{
-    display : flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.client-item{
-    padding : 5px;
-
-}
-#clients img{
-    height : 90px;
-}
-  /* Contact section */
-
-#contact{
-    position : relative;
-}
-#contact::before{
-    content: "" ;
-    position: absolute;
-    width : 100%;
-    height : 100%;
-    z-index : -1;
-    opacity: 0.4;
-    background: url('images/con.jpg') no-repeat center center/cover;
-    background-color: aqua;
-
-}
-
-#contact-box{
-    display: flex;
-    justify-content: center;
-    align-items : center;
-    padding-bottom : 34px;
-
-
-}
-
-#contact-box input,
-#contact-box textarea{
-    width : 100%;
-    padding : 0.5rem;
-    border-radius: 10px;
-    font-size : 1.2rem;
-    color :rgb(99, 148, 7);
-}
-
-#contact-box form{
-width : 40%;
-}
-
-#contact-box label{
-    font-size: 1.3rem;
-    /* font-family: 'Lobster', cursive; */
-    font-family: 'Bitter', serif;
-
-}
-
-footer{
-    background: black;
-    color : white;
-    padding : 9px 20px;
-}
-/* utillity classes  */
-.h-primary {
-    /* font-family: 'Anton', sans-serif; */
-    font-family: 'Josefin Sans', sans-serif;
-    font-size : 3.8rem;
-    padding : 12px;
-}
-.h-secondary {
-    /* font-family: 'Anton', sans-serif; */
-    font-family: 'Josefin Sans', sans-serif;
-    font-size : 2.1rem;
-    padding : 12px;
-}
-.btn{
-    margin : 17px;
-    padding : 6px 20px;
-    border : 2px solid rgb(12, 11, 11);
-    background : rgb(224, 96, 10);
-    border-radius: 15px;
-    font-size : 1.2rem;
-    cursor : pointer;
-}
-.btn:hover{
-    color : white;
-    background-color: rgb(99, 148, 7);;
-}
-.center{
-    text-align: center;
-}
-
-
-body {
-    margin: 0;
-    padding: 0;
-    /* background: rgb(241 59 59); */
-    overflow: hidden;
-}
-
-/* canvas{
-    position : fixed;
-    top : 0;
-    left : 0;
-    width : 100%;
-    height : 100%;
-    z-index : -1;
-} */
 .circle {
     position: absolute;
     top: 50%;
@@ -361,10 +107,7 @@ body {
 }
 
 h1 {
-    /* font-family: 'Merriweather Sans', sans-serif; */
-    /* font-family: 'Shadows Into Light', cursive; */
-    font-family: 'Righteous', cursive;
-
+    font-family: 'Ephesis', cursive;
     margin: 40px 0 0;
     text-align: center;
     color: white;
@@ -374,6 +117,19 @@ h1 {
 }
 
 h1 span {
-    font-size: 83px;
+    font-size: 100px;
 
+}
+
+
+h2{
+    font-family: 'Ephesis', cursive;
+    color: white;
+    font-size: 30px;
+    text-shadow: 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.name {
+    float: right;
+    margin-right: 15px;
 }
