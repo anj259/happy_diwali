@@ -108,6 +108,7 @@ z-index : -1;
 
 h1 {
     font-family: 'Ephesis', cursive;
+    /* font-family: 'Akronim', cursive; */
     margin: 40px 0 0;
     text-align: center;
     color: white;
@@ -123,7 +124,8 @@ h1 span {
 
 
 h2{
-    font-family: 'Ephesis', cursive;
+    /* font-family: 'Ephesis', cursive; */
+    font-family: 'Akronim', cursive;
     color: white;
     font-size: 30px;
     text-shadow: 0 15px 5px rgba(0, 0, 0, 0.2);
